@@ -1,0 +1,125 @@
+.nav {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background: #520bd446;
+  border-bottom: .2px solid rgb(1, 2, 1);
+}
+
+.link {
+
+
+  text-decoration: none;
+
+}
+
+.nav .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-weight: 600;
+
+
+}
+
+.logo div {
+
+  color: rgb(97, 78, 143);
+  font-size: 20px;
+
+}
+
+
+.toggle-icon {
+
+  cursor: pointer;
+
+
+}
+
+.activeLink{
+
+
+display: flex;
+
+
+}
+
+ul {
+
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  padding: 50px;
+  background: whitesmoke;
+  width: 250px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+ul .li {
+
+  cursor: pointer;
+  font-family: sans-serif;
+  margin-top: 8px;
+  color: rgb(7, 64, 114);
+  text-decoration: none;
+
+
+}
+
+ul .li:hover {
+
+  color: rgb(15, 192, 15);
+
+}
+
+ul .li:active {
+
+  color: red;
+
+}
+
+
+.faequals{
+
+font-size: 40px;
+ background: none;
+ cursor: pointer;
+ border: none;
+ transition: 0.5s ease-in-out;
+}
+
+.faequals:hover{
+
+transform: scale(0.9);
+
+
+}
+
+
+@media only screen and (max-width:600px) {
+
+
+  .nav {
+
+
+    padding-left: 40px;
+
+  }
+
+  .nav div {
+
+    font-size: 24px;
+
+  }
+
+}

@@ -1,0 +1,125 @@
+
+
+.container{
+
+margin-top: 30px;
+width: 100%;
+height: 400px;
+gap: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+ 
+
+
+}
+
+.container p{
+
+text-align: center;
+font-size: 3vw;
+font-weight: 600;
+color: rgb(8, 46, 8);
+    
+}
+
+
+.box-container{
+
+margin-top: 20px;
+display: grid;
+grid-template-columns: 200px 200px;
+gap: 10px;
+column-gap: 20px;
+justify-content: center;
+align-items: center;
+
+}
+
+.link{
+
+text-decoration: none;
+
+}
+
+
+  .box{
+
+text-align: center;
+border-radius: 5px;
+ height: 100px;
+ display: flex;
+ flex-direction: column;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background: #5208db3f;
+
+
+}
+
+.box:hover{
+
+
+background: #8a84848a;
+
+}
+
+.box:active{
+
+background: #c52b2bbe;
+user-select: none;
+
+
+}
+
+.box .icon{
+
+
+font-size: 30px;
+
+
+}
+
+.box span{
+
+font-weight: 600;
+color: rgb(0, 0, 0);
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+    
+
+  .container{
+
+margin-top: 25px;
+
+  }
+
+
+.container p{
+
+
+font-size: 6.5vw;
+
+}
+
+
+.box-container{
+
+grid-template-columns: 180px 180px;
+margin-top: 10px;
+
+}
+
+.box .icon{
+
+font-size: 40px;
+
+}
+
+
+}
