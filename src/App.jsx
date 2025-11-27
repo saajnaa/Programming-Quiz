@@ -9,6 +9,7 @@ import Home from './component/Home'
 import JsQuiz from './component/JsQuiz'
 import CssQuiz from './component/CssQuiz'
 import HtmlQuiz from './component/HtmlQuiz'
+import NotFound from './component/NotFound'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/html-test' element={<HtmlQuiz />}></Route>
         <Route path='/css-test' element={<CssQuiz />}></Route>
         <Route path='/javascript-test' element={<JsQuiz />}>  </Route>
+        <Route path='/*' element={<NotFound />}></Route>
 
 
 

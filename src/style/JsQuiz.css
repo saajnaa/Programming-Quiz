@@ -44,7 +44,51 @@ padding: 20px 0;
  background: #d4cfcf8a;
  border-radius: 10px;
 user-select: none;
+transition: all 0.3s ease;
 
+}
+
+.quiz-section button.option:hover:not(:disabled){
+background: #bbb;
+}
+
+.quiz-section button.option:disabled{
+cursor: not-allowed;
+}
+
+.quiz-section button.option.correct{
+background: #4caf50;
+color: white;
+font-weight: bold;
+}
+
+.quiz-section button.option.wrong{
+background: #f44336;
+color: white;
+font-weight: bold;
+}
+
+.quiz-section button.option.correct-answer{
+background: #4caf50;
+color: white;
+font-weight: bold;
+}
+
+.quiz-section .feedback{
+margin-top: 15px;
+font-size: 18px;
+font-weight: bold;
+color: #333;
+}
+
+.score-info{
+width: 100%;
+display: flex;
+justify-content: space-around;
+padding: 10px 0;
+font-size: 16px;
+font-weight: bold;
+color: #1e0788b0;
 }
 
 .quiz-section .button{

@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-
 import { Link } from 'react-router-dom'
 
-import { FaMoon } from 'react-icons/fa'
-import { FaEquals } from 'react-icons/fa'
-import { FaCross } from 'react-icons/fa'
+// React Icons......................
+import { CgMenuRightAlt } from "react-icons/cg"; 
+import { RxCross1 } from "react-icons/rx"; 
 
+
+import Navlogo from '../Images/logo.png'
 import '../style/NavBar.css'
 
 
@@ -14,10 +15,10 @@ function NavBar() {
     const [showLink, setShowLink] = useState("false")
 
 
-    const handleClick = ()=>{
+    const handleClick = () => {
 
 
-setShowLink(!showLink)
+        setShowLink(!showLink)
 
     }
 
@@ -28,32 +29,32 @@ setShowLink(!showLink)
 
                 <Link className='link' to='/'>
                     <div className="logo">
- 
-                        <div><FaMoon /></div>
+
+                        <img src={Navlogo} alt="Navigation Logo" />
 
                         <div> Coding Test</div>
                     </div>
                 </Link>
 
-                <ul className={showLink ? 'activeLink' : ''}>
+                <ul className={showLink ? '' : 'activeLink'}>
 
-                    <Link onClick={()=> setShowLink(false) } className='li' to='/html-test'>HTML</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li' to='/css-test'>CSS</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li' to='javascript-test'>JavaScript</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>React</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>Tailwind Css</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>Node js</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>Express js</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>MongoDb</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>npm</Link>
-                    <Link onClick={()=> setShowLink(false) } className='li'>Git And Github</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/html-test'>HTML</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/css-test'>CSS</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='javascript-test'>JavaScript</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/ReactJS' >React</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/TailwindCss'>Tailwind Css</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/NodeJs'>Node js</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/ExpressJs'>Express js</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/MongoDb'>MongoDb</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/npm'>npm</Link>
+                    <Link onClick={() => setShowLink(true)} className='li' to='/GitAndGithub'>Git And Github</Link>
 
                 </ul>
 
                 <button className='faequals' onClick={handleClick} >
 
-                    { showLink ? <FaEquals/> : <FaCross/>  }
-                  
+                    {showLink ? <CgMenuRightAlt /> : <RxCross1 />}
+
 
                 </button>
 
